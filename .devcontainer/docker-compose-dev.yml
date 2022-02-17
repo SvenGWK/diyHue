@@ -9,7 +9,7 @@ services:
     stop_grace_period: 0s
     environment:
       - disableonlinediscover=true
-      - DEBUG=true
+      - DEBUG=false
       - MAC=00:00:00:00:00:00
       - IP=192.168.1.1
     ports:
