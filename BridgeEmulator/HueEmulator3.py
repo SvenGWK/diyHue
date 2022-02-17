@@ -59,14 +59,14 @@ args = ap.parse_args()
 
 cwd = os.path.split(os.path.abspath(__file__))[0]
 
-if args.debug or (os.getenv('DEBUG') and (os.getenv('DEBUG') == "true" or os.getenv('DEBUG') == "True")):
-    root = logging.getLogger()
-    root.setLevel(logging.DEBUG)
-    ch = logging.StreamHandler(sys.stdout)
-    ch.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    ch.setFormatter(formatter)
-    root.addHandler(ch)
+#if args.debug or (os.getenv('DEBUG') and (os.getenv('DEBUG') == "true" or os.getenv('DEBUG') == "True")):
+#    root = logging.getLogger()
+#    root.setLevel(logging.DEBUG)
+#    ch = logging.StreamHandler(sys.stdout)
+#    ch.setLevel(logging.DEBUG)
+#    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+#    ch.setFormatter(formatter)
+#    root.addHandler(ch)
 
 if args.bind_ip:
     BIND_IP = args.bind_ip
