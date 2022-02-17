@@ -7,7 +7,7 @@ def _get_log_format():
 
 class Logger:
     loggers = {}
-    logLevel = logging.WARNING # Capture all logs prior to switching
+    logLevel = logging.CRITICAL # Capture all logs prior to switching
 
     def configure_logger(self, level):
         self.logLevel = getattr(logging, level)
